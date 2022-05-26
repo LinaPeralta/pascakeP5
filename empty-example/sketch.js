@@ -178,11 +178,11 @@ window.draw = function draw() {
   image(menu, 960, 30)
   menu.resize(404, 640);
 
-  image(banner,120,48);
-  banner.resize(671,120);
+  image(banner, 120, 48);
+  banner.resize(671, 120);
 
-  image(logo,40,30);
-  logo.resize(150,150);
+  image(logo, 40, 30);
+  logo.resize(150, 150);
 
 
 
@@ -191,15 +191,15 @@ window.draw = function draw() {
   //////////only cakes
 
   if (cToggle) {
-    image(c, 160, 220);
+    image(c, 160, 140);
   }
 
   if (vToggle) {
-    image(v, 160, 220);
+    image(v, 160, 140);
   }
 
   if (zToggle) {
-    image(z, 160, 220);
+    image(z, 160, 140);
   }
 
   ///////////cakes and glace
@@ -207,59 +207,59 @@ window.draw = function draw() {
   //chocolate glace
   //dark
   if (ccToggle) {
-    image(cc, 160, 220);
+    image(cc, 160, 140);
   }
   if (vcToggle) {
-    image(vc, 160, 220);
+    image(vc, 160, 140);
   }
   if (zcToggle) {
-    image(zc, 160, 220);
+    image(zc, 160, 140);
   }
 
   //white
   if (cbToggle) {
-    image(cb, 160, 220);
+    image(cb, 160, 140);
   }
   if (vbToggle) {
-    image(vb, 160, 220);
+    image(vb, 160, 140);
   }
   if (zbToggle) {
-    image(zb, 160, 220);
+    image(zb, 160, 140);
   }
 
   //fruits
   if (cfToggle) {
-    image(cf, 160, 220);
+    image(cf, 160, 140);
   }
   if (vfToggle) {
-    image(vf, 160, 220);
+    image(vf, 160, 140);
   }
   if (zfToggle) {
-    image(zf, 160, 220);
+    image(zf, 160, 140);
   }
 
 
   ////////////cakes and toppings without glace
   //sparks
   if (cncToggle) {
-    image(cnc, 160, 220);
+    image(cnc, 160, 140);
   }
   if (vncToggle) {
-    image(vnc, 160, 220);
+    image(vnc, 160, 140);
   }
   if (zncToggle) {
-    image(znc, 160, 220);
+    image(znc, 160, 140);
   }
 
   //fruit
   if (cnfToggle) {
-    image(cnf, 160, 220);
+    image(cnf, 160, 140);
   }
   if (vnfToggle) {
-    image(vnf, 160, 220);
+    image(vnf, 160, 140);
   }
   if (znfToggle) {
-    image(znf, 160, 220);
+    image(znf, 160, 140);
   }
 
   //////////cakes, glaces and toppings
@@ -268,37 +268,37 @@ window.draw = function draw() {
 
   //dark and sparks
   if (cccToggle) {
-    image(ccc, 160, 220);
+    image(ccc, 160, 140);
   }
   if (vccToggle) {
-    image(vcc, 160, 220);
+    image(vcc, 160, 140);
   }
   if (zccToggle) {
-    image(zcc, 160, 220);
+    image(zcc, 160, 140);
   }
 
   //white and sparks
   if (cbcToggle) {
-    image(cbc, 160, 220);
+    image(cbc, 160, 140);
   }
   if (vbcToggle) {
-    image(vbc, 160, 220);
+    image(vbc, 160, 140);
   }
   if (zbcToggle) {
-    image(zbc, 160, 220);
+    image(zbc, 160, 140);
   }
 
   //without glace and with sparks
   if (cncToggle) {
-    image(cnc, 160, 220);
+    image(cnc, 160, 140);
   }
 
   if (vncToggle) {
-    image(vnc, 160, 220);
+    image(vnc, 160, 140);
   }
 
   if (zncToggle) {
-    image(znc, 160, 220);
+    image(znc, 160, 140);
   }
 
 
@@ -306,44 +306,49 @@ window.draw = function draw() {
 
   //dark and sparks
   if (ccfToggle) {
-    image(ccf, 160, 220);
+    image(ccf, 160, 140);
   }
   if (vcfToggle) {
-    image(vcf, 160, 220);
+    image(vcf, 160, 140);
+  }
+  if (vffToggle) {
+    image(vff, 160, 140);
   }
   if (zcfToggle) {
-    image(zcf, 160, 220);
+    image(zcf, 160, 140);
   }
 
   //white and sparks
   if (cbfToggle) {
-    image(cbf, 160, 220);
+    image(cbf, 160, 140);
   }
   if (vbfToggle) {
-    image(vbf, 160, 220);
+    image(vbf, 160, 140);
   }
   if (zbfToggle) {
-    image(zbf, 160, 220);
+    image(zbf, 160, 140);
   }
 
   //fruits
   if (cfcToggle) {
-    image(cfc, 160, 220);
+    image(cfc, 160, 140);
   }
 
   if (cffToggle) {
-    image(cff, 160, 220);
+    image(cff, 160, 140);
   }
   if (vfcToggle) {
-    image(vfc, 160, 220);
+    image(vfc, 160, 140);
   }
   if (zfcToggle) {
-    image(zfc, 160, 220);
+    image(zfc, 160, 140);
   }
 
   if (zffToggle) {
-    image(zff, 160, 220);
+    image(zff, 160, 140);
   }
+
+
   //coords
   fill(0);
   text(" " + mouseX + ", " + mouseY, mouseX, mouseY);
@@ -355,22 +360,19 @@ function changeCake() {
   chocolateCake();
   vanillaCake();
   carrotCake();
-
-  
-
 }
 
 //functions with conditionals 
-function chocolateCake(){
+function chocolateCake() {
 
-   //chocolate cake
-   if (checkbox1.checked()) {
+  //chocolate cake
+  if (checkbox1.checked()) {
     cToggle = true;
   } else {
     cToggle = false;
   }
 
-   ///////////glace 
+  ///////////glace 
 
   ///choclate cakes
   // dark chocolate glace
@@ -398,9 +400,9 @@ function chocolateCake(){
   }
 
   ///toppings cake without glace
-  
-   //sparks
-   if (checkbox1.checked() && checkbox8.checked()) {
+
+  //sparks
+  if (checkbox1.checked() && checkbox8.checked()) {
     cToggle = false;
     cncToggle = true;
   } else {
@@ -415,79 +417,79 @@ function chocolateCake(){
     cnfToggle = false;
   }
 
-///////////////////////////////////////////////////////////three combo
+  ///////////////////////////////////////////////////////////three combo
 
-/////////////only chocolate cake flavor
+  /////////////only chocolate cake flavor
 
-//choclate with dark chocolate and sparks
-if (checkbox1.checked() &&  checkbox4.checked() && checkbox8.checked()) {
-  cToggle=false;
-  ccToggle=false;
-  cncToggle=false;
+  //choclate with dark chocolate and sparks
+  if (checkbox1.checked() && checkbox4.checked() && checkbox8.checked()) {
+    cToggle = false;
+    ccToggle = false;
+    cncToggle = false;
 
-  cccToggle = true;
-} else {
-  cccToggle = false;
+    cccToggle = true;
+  } else {
+    cccToggle = false;
+  }
+
+
+  //choclate with white chocolate and sparks
+  if (checkbox1.checked() && checkbox5.checked() && checkbox8.checked()) {
+    cToggle = false;
+    cbToggle = false;
+    cncToggle = false;
+
+    cbcToggle = true;
+  } else {
+    cbcToggle = false;
+  }
+
+  //choclate with fruit and sparks
+  if (checkbox1.checked() && checkbox6.checked() && checkbox8.checked()) {
+    cToggle = false;
+    cfToggle = false;
+    cncToggle = false;
+
+    cfcToggle = true;
+  } else {
+    cfcToggle = false;
+  }
+
+  ///choclate with dark chocolate and fruit
+  if (checkbox1.checked() && checkbox4.checked() && checkbox9.checked()) {
+    cToggle = false;
+    ccToggle = false;
+    cnfToggle = false;
+
+    ccfToggle = true;
+  } else {
+    ccfToggle = false;
+  }
+
+  ///choclate with dark chocolate and fruit
+  if (checkbox1.checked() && checkbox5.checked() && checkbox9.checked()) {
+    cToggle = false;
+    cbToggle = false;
+    cnfToggle = false;
+
+    cbfToggle = true;
+  } else {
+    cbfToggle = false;
+  }
+
+  ///choclate with dark chocolate and fruit
+  if (checkbox1.checked() && checkbox6.checked() && checkbox9.checked()) {
+    cToggle = false;
+    cfToggle = false;
+    cnfToggle = false;
+
+    cffToggle = true;
+  } else {
+    cffToggle = false;
+  }
 }
 
-
-//choclate with white chocolate and sparks
-if (checkbox1.checked() &&  checkbox5.checked() && checkbox8.checked()) {
-  cToggle=false;
-  cbToggle=false;
-  cncToggle=false;
-
-  cbcToggle = true;
-} else {
-  cbcToggle = false;
-}
-
-//choclate with fruit and sparks
-if (checkbox1.checked() &&  checkbox6.checked() && checkbox8.checked()) {
-  cToggle=false;
-  cfToggle=false;
-  cncToggle=false;
-
-  cfcToggle = true;
-} else {
-  cfcToggle = false;
-}
-
-///choclate with dark chocolate and fruit
-if (checkbox1.checked() &&  checkbox4.checked() && checkbox9.checked()) {
-  cToggle=false;
-  ccToggle=false;
-  cnfToggle=false;
-
-  ccfToggle = true;
-} else {
-  ccfToggle = false;
-}
-
-///choclate with dark chocolate and fruit
-if (checkbox1.checked() &&  checkbox5.checked() && checkbox9.checked()) {
-  cToggle=false;
-  cbToggle=false;
-  cnfToggle=false;
-
-  cbfToggle = true;
-} else {
-  cbfToggle = false;
-}
-
-///choclate with dark chocolate and fruit
-if (checkbox1.checked() &&  checkbox6.checked() && checkbox9.checked()) {
-  cToggle=false;
-  cfToggle=false;
-  cnfToggle=false;
-
-  cffToggle = true;
-} else {
-  cffToggle = false;
-}
-}
-
-function vanillaCake(){
+function vanillaCake() {
 
   if (checkbox2.checked()) {
     vToggle = true;
@@ -497,8 +499,8 @@ function vanillaCake(){
 
   ////////vanilla cakes
 
-   // dark chocolate glace
-   if (checkbox2.checked() && checkbox4.checked()) {
+  // dark chocolate glace
+  if (checkbox2.checked() && checkbox4.checked()) {
     vToggle = false;
     vcToggle = true;
   } else {
@@ -522,9 +524,9 @@ function vanillaCake(){
   }
 
   ///toppings cake without glace
-  
-   //sparks
-   if (checkbox2.checked() && checkbox8.checked()) {
+
+  //sparks
+  if (checkbox2.checked() && checkbox8.checked()) {
     vToggle = false;
     vncToggle = true;
   } else {
@@ -539,75 +541,75 @@ function vanillaCake(){
     vnfToggle = false;
   }
 
-//////////////////////////////three combo
-/////////////only vanilla cake flavor
+  //////////////////////////////three combo
+  /////////////only vanilla cake flavor
 
-//choclate with dark chocolate and sparks
-if (checkbox2.checked() &&  checkbox4.checked() && checkbox8.checked()) {
-  vToggle=false;
-  vcToggle=false;
-  vncToggle=false;
+  //choclate with dark chocolate and sparks
+  if (checkbox2.checked() && checkbox4.checked() && checkbox8.checked()) {
+    vToggle = false;
+    vcToggle = false;
+    vncToggle = false;
 
-  vccToggle = true;
-} else {
-  vccToggle = false;
-}
+    vccToggle = true;
+  } else {
+    vccToggle = false;
+  }
 
 
-//choclate with white chocolate and sparks
-if (checkbox2.checked() &&  checkbox5.checked() && checkbox8.checked()) {
-  vToggle=false;
-  vbToggle=false;
-  vncToggle=false;
+  //choclate with white chocolate and sparks
+  if (checkbox2.checked() && checkbox5.checked() && checkbox8.checked()) {
+    vToggle = false;
+    vbToggle = false;
+    vncToggle = false;
 
-  vbcToggle = true;
-} else {
-  vbcToggle = false;
-}
+    vbcToggle = true;
+  } else {
+    vbcToggle = false;
+  }
 
-//choclate with fruit and sparks
-if (checkbox2.checked() &&  checkbox6.checked() && checkbox8.checked()) {
-  vToggle=false;
-  vfToggle=false;
-  vncToggle=false;
+  //choclate with fruit and sparks
+  if (checkbox2.checked() && checkbox6.checked() && checkbox8.checked()) {
+    vToggle = false;
+    vfToggle = false;
+    vncToggle = false;
 
-  vfcToggle = true;
-} else {
-  vfcToggle = false;
-}
+    vfcToggle = true;
+  } else {
+    vfcToggle = false;
+  }
 
-///choclate with dark chocolate and fruit
-if (checkbox2.checked() &&  checkbox4.checked() && checkbox9.checked()) {
-  vToggle=false;
-  vcToggle=false;
-  vnfToggle=false;
+  ///choclate with dark chocolate and fruit
+  if (checkbox2.checked() && checkbox4.checked() && checkbox9.checked()) {
+    vToggle = false;
+    vcToggle = false;
+    vnfToggle = false;
 
-  vcfToggle = true;
-} else {
-  vcfToggle = false;
-}
+    vcfToggle = true;
+  } else {
+    vcfToggle = false;
+  }
 
-///choclate with dark chocolate and fruit
-if (checkbox2.checked() &&  checkbox5.checked() && checkbox9.checked()) {
-  vToggle=false;
-  vbToggle=false;
-  vnfToggle=false;
+  ///choclate with dark chocolate and fruit
+  if (checkbox2.checked() && checkbox5.checked() && checkbox9.checked()) {
+    vToggle = false;
+    vbToggle = false;
+    vnfToggle = false;
 
-  vbfToggle = true;
-} else {
-  vbfToggle = false;
-}
+    vbfToggle = true;
+  } else {
+    vbfToggle = false;
+  }
 
-///choclate with dark chocolate and fruit
-if (checkbox2.checked() &&  checkbox6.checked() && checkbox9.checked()) {
-  vToggle=false;
-  vfToggle=false;
-  vnfToggle=false;
+  ///choclate with dark chocolate and fruit
+  if (checkbox2.checked() && checkbox6.checked() && checkbox9.checked()) {
+    vToggle = false;
+    vfToggle = false;
+    vnfToggle = false;
 
-  vffToggle = true;
-} else {
-  vffToggle = false;
-}
+    vffToggle = true;
+  } else {
+    vffToggle = false;
+  }
 
 }
 
@@ -619,10 +621,10 @@ function carrotCake() {
     zToggle = false;
   }
 
-   //////////////carrot cakes
-  
-   // dark chocolate glace
-   if (checkbox3.checked() && checkbox4.checked()) {
+  //////////////carrot cakes
+
+  // dark chocolate glace
+  if (checkbox3.checked() && checkbox4.checked()) {
     zToggle = false;
     zcToggle = true;
   } else {
@@ -646,9 +648,9 @@ function carrotCake() {
   }
 
   ///toppings cake without glace
-  
-   //sparks
-   if (checkbox3.checked() && checkbox8.checked()) {
+
+  //sparks
+  if (checkbox3.checked() && checkbox8.checked()) {
     zToggle = false;
     zncToggle = true;
   } else {
@@ -663,74 +665,104 @@ function carrotCake() {
     znfToggle = false;
   }
 
-//////////////////////////////three combo
-/////////////only  carrot cake flavor
+  //////////////////////////////three combo
+  /////////////only  carrot cake flavor
 
-//choclate with dark chocolate and sparks
-if (checkbox3.checked() &&  checkbox4.checked() && checkbox8.checked()) {
-  zToggle=false;
-  zcToggle=false;
-  zncToggle=false;
+  //choclate with dark chocolate and sparks
+  if (checkbox3.checked() && checkbox4.checked() && checkbox8.checked()) {
+    zToggle = false;
+    zcToggle = false;
+    zncToggle = false;
 
-  zccToggle = true;
-} else {
-  zccToggle = false;
+    zccToggle = true;
+  } else {
+    zccToggle = false;
+  }
+
+
+  //choclate with white chocolate and sparks
+  if (checkbox3.checked() && checkbox5.checked() && checkbox8.checked()) {
+    zToggle = false;
+    zbToggle = false;
+    zncToggle = false;
+
+    zbcToggle = true;
+  } else {
+    zbcToggle = false;
+  }
+
+  //choclate with fruit and sparks
+  if (checkbox3.checked() && checkbox6.checked() && checkbox8.checked()) {
+    zToggle = false;
+    zfToggle = false;
+    zncToggle = false;
+
+    zfcToggle = true;
+  } else {
+    zfcToggle = false;
+  }
+
+  ///choclate with dark chocolate and fruit
+  if (checkbox3.checked() && checkbox4.checked() && checkbox9.checked()) {
+    zToggle = false;
+    zcToggle = false;
+    znfToggle = false;
+
+    zcfToggle = true;
+  } else {
+    zcfToggle = false;
+  }
+
+  ///choclate with dark chocolate and fruit
+  if (checkbox3.checked() && checkbox5.checked() && checkbox9.checked()) {
+    zToggle = false;
+    zbToggle = false;
+    znfToggle = false;
+
+    zbfToggle = true;
+  } else {
+    zbfToggle = false;
+  }
+
+  ///choclate with dark chocolate and fruit
+  if (checkbox3.checked() && checkbox6.checked() && checkbox9.checked()) {
+    zToggle = false;
+    zfToggle = false;
+    znfToggle = false;
+
+    zffToggle = true;
+  } else {
+    zffToggle = false;
+  }
+
 }
 
+function mouseClicked() {
 
-//choclate with white chocolate and sparks
-if (checkbox3.checked() &&  checkbox5.checked() && checkbox8.checked()) {
-  zToggle=false;
-  zbToggle=false;
-  zncToggle=false;
+  if (checkbox1.checked) {
+    
+    checkbox2.checked(false);
+    checkbox3.checked(false);
+    console.log(checkbox2.checked());
+  }
 
-  zbcToggle = true;
-} else {
-  zbcToggle = false;
-}
+  /*
+  if (checkbox2.checked()) {
+    
+    checkbox1.checked(false);
+    checkbox3.checked(false);
+    //console.log(checkbox2.checked());
+  }else{
+    checkbox2.checked(true);
+  }
 
-//choclate with fruit and sparks
-if (checkbox3.checked() &&  checkbox6.checked() && checkbox8.checked()) {
-  zToggle=false;
-  zfToggle=false;
-  zncToggle=false;
-
-  zfcToggle = true;
-} else {
-  zfcToggle = false;
-}
-
-///choclate with dark chocolate and fruit
-if (checkbox3.checked() &&  checkbox4.checked() && checkbox9.checked()) {
-  zToggle=false;
-  zcToggle=false;
-  znfToggle=false;
-
-  zcfToggle = true;
-} else {
-  zcfToggle = false;
-}
-
-///choclate with dark chocolate and fruit
-if (checkbox3.checked() &&  checkbox5.checked() && checkbox9.checked()) {
-  zToggle=false;
-  zbToggle=false;
-  znfToggle=false;
-
-  zbfToggle = true;
-} else {
-zbfToggle = false;
-}
-
-///choclate with dark chocolate and fruit
-if (checkbox3.checked() &&  checkbox6.checked() && checkbox9.checked()) {
-  zToggle=false;
-  zfToggle=false;
-  znfToggle=false;
-
-  zffToggle = true;
-} else {
-  zffToggle = false;
-}
-
+  if (checkbox3.checked()) {
+    
+    checkbox2.checked(false);
+    checkbox1.checked(false);
+    //console.log(checkbox2.checked());
+  }else{
+    checkbox3.checked(true);
+  }
+*/
 }
