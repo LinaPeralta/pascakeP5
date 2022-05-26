@@ -136,7 +136,6 @@ window.setup = function setup() {
   znf = loadImage("../img/znf.png");
 
   ///////checkbox
-
   checkbox1 = createCheckbox('', false);
   checkbox2 = createCheckbox('', false);
   checkbox3 = createCheckbox('', false);
@@ -145,8 +144,6 @@ window.setup = function setup() {
   checkbox6 = createCheckbox('', false);
   checkbox8 = createCheckbox('', false);
   checkbox9 = createCheckbox('', false);
-
-
 
   // Position the checkbox object
   checkbox1.position(1060, 132);
@@ -158,18 +155,78 @@ window.setup = function setup() {
   checkbox8.position(1060, 475);
   checkbox9.position(1060, 507);
 
-
-
   // Call the change_bg() function when the box
   // is checked or unchecked
-  checkbox1.changed(changeCake);
-  checkbox2.changed(changeCake);
-  checkbox3.changed(changeCake);
-  checkbox4.changed(changeCake);
-  checkbox5.changed(changeCake);
-  checkbox6.changed(changeCake);
-  checkbox8.changed(changeCake);
-  checkbox9.changed(changeCake);
+  checkbox1.changed(()=>{
+    if(checkbox1.checked()){
+      checkbox2.checked(false);
+      checkbox3.checked(false);
+      changeCake()
+    } else {
+      checkbox1.checked(true);
+    }
+  })
+  checkbox2.changed(()=>{
+    if(checkbox2.checked()){
+      checkbox3.checked(false);
+      checkbox1.checked(false);
+      changeCake()
+    } else {
+      checkbox2.checked(true);
+    }
+  })
+  checkbox3.changed(()=>{
+    if(checkbox3.checked()){
+      checkbox2.checked(false);
+      checkbox1.checked(false);
+      changeCake()
+    } else {
+      checkbox3.checked(true);
+    }
+  });
+  checkbox4.changed(()=>{
+    if(checkbox4.checked()){
+      checkbox5.checked(false);
+      checkbox6.checked(false);
+      changeCake()
+    } else {
+      checkbox4.checked(true);
+    }
+  });
+  checkbox5.changed(()=>{
+    if(checkbox5.checked()){
+      checkbox4.checked(false);
+      checkbox6.checked(false);
+      changeCake()
+    } else {
+      checkbox5.checked(true);
+    }
+  });
+  checkbox6.changed(()=>{
+    if(checkbox6.checked()){
+      checkbox4.checked(false);
+      checkbox5.checked(false);
+      changeCake()
+    } else {
+      checkbox6.checked(true);
+    }
+  });
+  checkbox8.changed(()=>{
+    if(checkbox8.checked()){
+      checkbox9.checked(false);
+      changeCake()
+    } else {
+      checkbox8.checked(true);
+    }
+  });
+  checkbox9.changed(()=>{
+    if(checkbox9.checked()){
+      checkbox8.checked(false);
+      changeCake()
+    } else {
+      checkbox9.checked(true);
+    }
+  });
 }
 
 window.draw = function draw() {
@@ -356,10 +413,10 @@ window.draw = function draw() {
 
 //function to change cake image
 function changeCake() {
-
   chocolateCake();
   vanillaCake();
   carrotCake();
+
 }
 
 //functions with conditionals 
@@ -368,6 +425,8 @@ function chocolateCake() {
   //chocolate cake
   if (checkbox1.checked()) {
     cToggle = true;
+    checkbox2.checked(false);
+    checkbox3.checked(false);
   } else {
     cToggle = false;
   }
@@ -734,35 +793,4 @@ function carrotCake() {
   } else {
     zffToggle = false;
   }
-
-}
-
-function mouseClicked() {
-
-  if (checkbox1.checked) {
-    
-    checkbox2.checked(false);
-    checkbox3.checked(false);
-    console.log(checkbox2.checked());
-  }
-
-  /*
-  if (checkbox2.checked()) {
-    
-    checkbox1.checked(false);
-    checkbox3.checked(false);
-    //console.log(checkbox2.checked());
-  }else{
-    checkbox2.checked(true);
-  }
-
-  if (checkbox3.checked()) {
-    
-    checkbox2.checked(false);
-    checkbox1.checked(false);
-    //console.log(checkbox2.checked());
-  }else{
-    checkbox3.checked(true);
-  }
-*/
 }
