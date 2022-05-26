@@ -2,85 +2,84 @@
 //flavor
 let cToggle;
 let cbToggle;
-let cbcToggle ;
-let cbfToggle ;
+let cbcToggle;
+let cbfToggle;
 let ccToggle;
-let cccToggle ;
+let cccToggle;
 let ccfToggle;
 let cfToggle;
-let cfcToggle ;
-let cncToggle ;
-let cnfToggle ;
+let cfcToggle;
+let cncToggle;
+let cnfToggle;
 let vToggle;
 let vbToggle;
 let vfToggle;
-let vbcToggle ;
-let vbfToggle ;
+let vbcToggle;
+let vbfToggle;
 let vcToggle;
-let vccToggle ;
-let vcfToggle ;
-let vfcToggle ;
-let vffToggle ;
-let vncToggle ;
-let vnfToggle ;
+let vccToggle;
+let vcfToggle;
+let vfcToggle;
+let vffToggle;
+let vncToggle;
+let vnfToggle;
 let zToggle;
 let zbToggle;
-let zbcToggle ;
-let zbfToggle ;
+let zbcToggle;
+let zbfToggle;
 let zcToggle;
-let zccToggle ;
-let zcfToggle ;
+let zccToggle;
+let zcfToggle;
 let zfToggle;
-let zfcToggle ;
-let zffToggle ;
-let zncToggle ;
-let znfToggle ;
-
+let zfcToggle;
+let zffToggle;
+let zncToggle;
+let znfToggle;
 
 
 let menu;
 //cakes images
 let c, cb, cbc, cbf, cc, ccc, ccf, cf, cfc, cff, cnc, cnf, v, vf, vfc, vb, vbc, vbf, vc, vcc, vcf, vff, vnc, vnf, z, zb, zbc, zbf, zc, zcc, zcf, zf, zfc, zff, znc, znf;
 
-let checkbox1, checkbox2, checkbox3, checkbox4, checkbox5, checkbox6, checkbox7, checkbox8, checkbox9, checkbox10;
+let checkbox1, checkbox2, checkbox3, checkbox4, checkbox5, checkbox6, checkbox8, checkbox9;
 
 window.setup = function setup() {
 
   createCanvas(1435, 700);
 
 
-  cToggle =false;
-  cbToggle =false;
+  cToggle = false;
+  cbToggle = false;
   cbcToggle = false;
   cbfToggle = false;
-  ccToggle =false;
+  ccToggle = false;
   cccToggle = false;
-  ccfToggle =false;
-  cfToggle =false;
+  ccfToggle = false;
+  cfToggle = false;
   cfcToggle = false;
   cncToggle = false;
   cnfToggle = false;
-  vToggle =false;
-  vbToggle =false;
-  vfToggle =false;
+  vToggle = false;
+  vbToggle = false;
+  vfToggle = false;
   vbcToggle = false;
   vbfToggle = false;
-  vcToggle =false;
+  vcToggle = false;
   vccToggle = false;
   vcfToggle = false;
-  vfToggle =false;
+  vfToggle = false;
   vfcToggle = false;
   vffToggle = false;
   vncToggle = false;
   vnfToggle = false;
-  zToggle =false;
-  zbToggle =false;
+  zToggle = false;
+  zbToggle = false;
   zbcToggle = false;
   zbfToggle = false;
-  zcToggle =false;
+  zcToggle = false;
   zccToggle = false;
   zcfToggle = false;
-  zfToggle =false;
+  zfToggle = false;
   zfcToggle = false;
   zffToggle = false;
   zncToggle = false;
@@ -136,10 +135,9 @@ window.setup = function setup() {
   checkbox4 = createCheckbox('', false);
   checkbox5 = createCheckbox('', false);
   checkbox6 = createCheckbox('', false);
-  checkbox7 = createCheckbox('', false);
   checkbox8 = createCheckbox('', false);
   checkbox9 = createCheckbox('', false);
-  checkbox10 = createCheckbox('', false);
+
 
 
   // Position the checkbox object
@@ -149,10 +147,9 @@ window.setup = function setup() {
   checkbox4.position(1060, 288);
   checkbox5.position(1060, 322);
   checkbox6.position(1060, 355);
-  checkbox7.position(1060, 388);
   checkbox8.position(1060, 475);
   checkbox9.position(1060, 507);
-  checkbox10.position(1060, 539);
+
 
 
   // Call the change_bg() function when the box
@@ -163,10 +160,8 @@ window.setup = function setup() {
   checkbox4.changed(changeCake);
   checkbox5.changed(changeCake);
   checkbox6.changed(changeCake);
-  checkbox7.changed(changeCake);
   checkbox8.changed(changeCake);
   checkbox9.changed(changeCake);
-  checkbox10.changed(changeCake);
 }
 
 window.draw = function draw() {
@@ -198,7 +193,7 @@ window.draw = function draw() {
     image(cc, 160, 150);
   }
   if (vcToggle) {
-    mage(vc, 160, 150);
+    image(vc, 160, 150);
   }
   if (zcToggle) {
     image(zc, 160, 150);
@@ -212,7 +207,18 @@ window.draw = function draw() {
     image(vb, 160, 150);
   }
   if (zbToggle) {
-    image(z, 160, 150);
+    image(zb, 160, 150);
+  }
+
+  //fruits
+  if (cfToggle) {
+    image(cf, 160, 150);
+  }
+  if (vfToggle) {
+    image(vf, 160, 150);
+  }
+  if (zfToggle) {
+    image(zf, 160, 150);
   }
 
 
@@ -271,7 +277,7 @@ window.draw = function draw() {
   }
 
   if (vncToggle) {
-    image(v, 160, 150);
+    image(vnc, 160, 150);
   }
 
   if (zncToggle) {
@@ -283,21 +289,21 @@ window.draw = function draw() {
 
   //dark and sparks
   if (ccfToggle) {
-     image(ccf, 160, 150);
+    image(ccf, 160, 150);
   }
   if (vcfToggle) {
-     image(vcf, 160, 150);
+    image(vcf, 160, 150);
   }
   if (zcfToggle) {
-     image(zcf, 160, 150);
+    image(zcf, 160, 150);
   }
 
   //white and sparks
   if (cbfToggle) {
-   image(cbf, 160, 150);
+    image(cbf, 160, 150);
   }
   if (vbfToggle) {
-   image(vbf, 160, 150);
+    image(vbf, 160, 150);
   }
   if (zbfToggle) {
     image(zbf, 160, 150);
@@ -332,12 +338,145 @@ function changeCake() {
     zToggle = false;
   }
 
-  //////glace
+  ///////////glace 
+
+  ///choclate cakes
   // dark chocolate glace
   if (checkbox1.checked() && checkbox4.checked()) {
+    cToggle = false;
     ccToggle = true;
   } else {
     ccToggle = false;
   }
 
+  //white chocolate
+  if (checkbox1.checked() && checkbox5.checked()) {
+    cToggle = false;
+    cbToggle = true;
+  } else {
+    cbToggle = false;
+  }
+
+  //fruit
+  if (checkbox1.checked() && checkbox6.checked()) {
+    cToggle = false;
+    cfToggle = true;
+  } else {
+    cfToggle = false;
+  }
+
+  ///toppings cake without glace
+  
+   //sparks
+   if (checkbox1.checked() && checkbox8.checked()) {
+    cToggle = false;
+    cncToggle = true;
+  } else {
+    cncToggle = false;
+  }
+
+  //fuit
+  if (checkbox1.checked() && checkbox9.checked()) {
+    cToggle = false;
+    cnfToggle = true;
+  } else {
+    cnfToggle = false;
+  }
+
+////three combo
+if (checkbox1.checked() &&  checkbox4.checked() && checkbox9.checked()) {
+  cToggle=false;
+  ccToggle=false;
+  cncToggle=false;
+
+  cccToggle = true;
+} else {
+  cccToggle = false;
 }
+
+
+
+
+
+
+
+  ////////vanilla cakes
+
+   // dark chocolate glace
+  if (checkbox2.checked() && checkbox4.checked()) {
+
+    vcToggle = true;
+  } else {
+    vcToggle = false;
+  }
+
+  //white chocolate
+  if (checkbox2.checked() && checkbox5.checked()) {
+    vbToggle = true;
+  } else {
+    vbToggle = false;
+  }
+
+  //fruit
+  if (checkbox2.checked() && checkbox6.checked()) {
+    vfToggle = true;
+  } else {
+    vfToggle = false;
+  }
+
+  ///toppings cake without glace
+  
+   //sparks
+   if (checkbox2.checked() && checkbox8.checked()) {
+    vncToggle = true;
+  } else {
+    vncToggle = false;
+  }
+
+  //fuit
+  if (checkbox2.checked() && checkbox9.checked()) {
+    vnfToggle = true;
+  } else {
+    vnfToggle = false;
+  }
+
+  ///carrot cakes
+  
+   // dark chocolate glace
+   if (checkbox3.checked() && checkbox4.checked()) {
+    zcToggle = true;
+  } else {
+    zcToggle = false;
+  }
+
+  //white chocolate
+  if (checkbox3.checked() && checkbox5.checked()) {
+    zbToggle = true;
+  } else {
+    zbToggle = false;
+  }
+
+  //fruit
+  if (checkbox3.checked() && checkbox6.checked()) {
+    zfToggle = true;
+  } else {
+    zfToggle = false;
+  }
+
+  ///toppings cake without glace
+  
+   //sparks
+   if (checkbox3.checked() && checkbox8.checked()) {
+    zncToggle = true;
+  } else {
+    zncToggle = false;
+  }
+
+  //fuit
+  if (checkbox3.checked() && checkbox9.checked()) {
+    znfToggle = true;
+  } else {
+    znfToggle = false;
+  }
+}
+
