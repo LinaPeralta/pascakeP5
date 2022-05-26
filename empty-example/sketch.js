@@ -40,6 +40,7 @@ let znfToggle;
 
 let menu;
 let logo;
+let banner;
 //cakes images
 let c, cb, cbc, cbf, cc, ccc, ccf, cf, cfc, cff, cnc, cnf, v, vf, vfc, vb, vbc, vbf, vc, vcc, vcf, vff, vnc, vnf, z, zb, zbc, zbf, zc, zcc, zcf, zf, zfc, zff, znc, znf;
 
@@ -92,6 +93,8 @@ window.setup = function setup() {
   menu = loadImage("../img/menu.png");
   //logo
   logo = loadImage("../img/logo2.png");
+  //banner
+  banner = loadImage("../img/banner.png");
 
   //cakes image
   c = loadImage("../img/c.png");
@@ -174,9 +177,14 @@ window.draw = function draw() {
 
   image(menu, 960, 30)
   menu.resize(404, 640);
-  
+
+  image(banner,120,48);
+  banner.resize(671,120);
+
   image(logo,40,30);
   logo.resize(150,150);
+
+
 
   //conditionals for paint images 
 
