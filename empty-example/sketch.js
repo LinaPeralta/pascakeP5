@@ -446,7 +446,7 @@ function chocolateCake() {
   if (checkbox1.checked() && checkbox4.checked()) {
     cToggle = false;
     ccToggle = true;
-    product = "chocolate";
+    
   } else {
     ccToggle = false;
   }
@@ -455,7 +455,7 @@ function chocolateCake() {
   if (checkbox1.checked() && checkbox5.checked()) {
     cToggle = false;
     cbToggle = true;
-    product = "chocolate";
+    
   } else {
     cbToggle = false;
   }
@@ -464,7 +464,7 @@ function chocolateCake() {
   if (checkbox1.checked() && checkbox6.checked()) {
     cToggle = false;
     cfToggle = true;
-    product = "chocolate";
+    
   } else {
     cfToggle = false;
   }
@@ -475,7 +475,7 @@ function chocolateCake() {
   if (checkbox1.checked() && checkbox8.checked()) {
     cToggle = false;
     cncToggle = true;
-    product = "chocolate";
+    
   } else {
     cncToggle = false;
   }
@@ -484,7 +484,7 @@ function chocolateCake() {
   if (checkbox1.checked() && checkbox9.checked()) {
     cToggle = false;
     cnfToggle = true; 
-    product = "chocolate";
+    
   } else {
     cnfToggle = false;
   }
@@ -495,7 +495,7 @@ function chocolateCake() {
 
   //choclate with dark chocolate and sparks
   if (checkbox1.checked() && checkbox4.checked() && checkbox8.checked()) { 
-    product = "chocolate";
+    
     cToggle = false;
     ccToggle = false;
     cncToggle = false;
@@ -508,7 +508,7 @@ function chocolateCake() {
 
   //choclate with white chocolate and sparks
   if (checkbox1.checked() && checkbox5.checked() && checkbox8.checked()) {
-    product = "chocolate";
+    
     cToggle = false;
     cbToggle = false;
     cncToggle = false;
@@ -520,7 +520,7 @@ function chocolateCake() {
 
   //choclate with fruit and sparks
   if (checkbox1.checked() && checkbox6.checked() && checkbox8.checked()) {
-    product = "chocolate";
+    
     cToggle = false;
     cfToggle = false;
     cncToggle = false;
@@ -532,7 +532,7 @@ function chocolateCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox1.checked() && checkbox4.checked() && checkbox9.checked()) {
-    product = "chocolate";
+    
     cToggle = false;
     ccToggle = false;
     cnfToggle = false;
@@ -544,7 +544,7 @@ function chocolateCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox1.checked() && checkbox5.checked() && checkbox9.checked()) {
-    product = "chocolate";
+    
     cToggle = false;
     cbToggle = false;
     cnfToggle = false;
@@ -556,7 +556,7 @@ function chocolateCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox1.checked() && checkbox6.checked() && checkbox9.checked()) {
-    product = "chocolate";
+    
     cToggle = false;
     cfToggle = false;
     cnfToggle = false;
@@ -580,7 +580,7 @@ function vanillaCake() {
 
   // dark chocolate glace
   if (checkbox2.checked() && checkbox4.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vcToggle = true;
   } else {
@@ -589,7 +589,7 @@ function vanillaCake() {
 
   //white chocolate
   if (checkbox2.checked() && checkbox5.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vbToggle = true;
   } else {
@@ -598,7 +598,7 @@ function vanillaCake() {
 
   //fruit
   if (checkbox2.checked() && checkbox6.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vfToggle = true;
   } else {
@@ -609,7 +609,7 @@ function vanillaCake() {
 
   //sparks
   if (checkbox2.checked() && checkbox8.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vncToggle = true;
   } else {
@@ -618,7 +618,7 @@ function vanillaCake() {
 
   //fuit
   if (checkbox2.checked() && checkbox9.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vnfToggle = true;
   } else {
@@ -630,7 +630,7 @@ function vanillaCake() {
 
   //choclate with dark chocolate and sparks
   if (checkbox2.checked() && checkbox4.checked() && checkbox8.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vcToggle = false;
     vncToggle = false;
@@ -643,7 +643,7 @@ function vanillaCake() {
 
   //choclate with white chocolate and sparks
   if (checkbox2.checked() && checkbox5.checked() && checkbox8.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vbToggle = false;
     vncToggle = false;
@@ -655,7 +655,7 @@ function vanillaCake() {
 
   //choclate with fruit and sparks
   if (checkbox2.checked() && checkbox6.checked() && checkbox8.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vfToggle = false;
     vncToggle = false;
@@ -667,7 +667,7 @@ function vanillaCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox2.checked() && checkbox4.checked() && checkbox9.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vcToggle = false;
     vnfToggle = false;
@@ -679,7 +679,7 @@ function vanillaCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox2.checked() && checkbox5.checked() && checkbox9.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vbToggle = false;
     vnfToggle = false;
@@ -691,7 +691,7 @@ function vanillaCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox2.checked() && checkbox6.checked() && checkbox9.checked()) {
-    product = "vanilla";
+
     vToggle = false;
     vfToggle = false;
     vnfToggle = false;
@@ -716,7 +716,7 @@ function carrotCake() {
 
   // dark chocolate glace
   if (checkbox3.checked() && checkbox4.checked()) { 
-    product = "carrot";
+
     zToggle = false;
     zcToggle = true;
   } else {
@@ -725,7 +725,7 @@ function carrotCake() {
 
   //white chocolate
   if (checkbox3.checked() && checkbox5.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zbToggle = true;
   } else {
@@ -734,7 +734,7 @@ function carrotCake() {
 
   //fruit
   if (checkbox3.checked() && checkbox6.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zfToggle = true;
   } else {
@@ -745,7 +745,7 @@ function carrotCake() {
 
   //sparks
   if (checkbox3.checked() && checkbox8.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zncToggle = true;
   } else {
@@ -754,7 +754,7 @@ function carrotCake() {
 
   //fuit
   if (checkbox3.checked() && checkbox9.checked()) {
-    product = "carrot";
+
     zToggle = false;
     znfToggle = true;
   } else {
@@ -766,7 +766,7 @@ function carrotCake() {
 
   //choclate with dark chocolate and sparks
   if (checkbox3.checked() && checkbox4.checked() && checkbox8.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zcToggle = false;
     zncToggle = false;
@@ -779,7 +779,7 @@ function carrotCake() {
 
   //choclate with white chocolate and sparks
   if (checkbox3.checked() && checkbox5.checked() && checkbox8.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zbToggle = false;
     zncToggle = false;
@@ -791,7 +791,7 @@ function carrotCake() {
 
   //choclate with fruit and sparks
   if (checkbox3.checked() && checkbox6.checked() && checkbox8.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zfToggle = false;
     zncToggle = false;
@@ -803,7 +803,7 @@ function carrotCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox3.checked() && checkbox4.checked() && checkbox9.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zcToggle = false;
     znfToggle = false;
@@ -815,7 +815,7 @@ function carrotCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox3.checked() && checkbox5.checked() && checkbox9.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zbToggle = false;
     znfToggle = false;
@@ -827,7 +827,7 @@ function carrotCake() {
 
   ///choclate with dark chocolate and fruit
   if (checkbox3.checked() && checkbox6.checked() && checkbox9.checked()) {
-    product = "carrot";
+
     zToggle = false;
     zfToggle = false;
     znfToggle = false;
