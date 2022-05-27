@@ -41,10 +41,14 @@ let znfToggle;
 let menu;
 let logo;
 let banner;
+
+let product;
 //cakes images
 let c, cb, cbc, cbf, cc, ccc, ccf, cf, cfc, cff, cnc, cnf, v, vf, vfc, vb, vbc, vbf, vc, vcc, vcf, vff, vnc, vnf, z, zb, zbc, zbf, zc, zcc, zcf, zf, zfc, zff, znc, znf;
 
 let checkbox1, checkbox2, checkbox3, checkbox4, checkbox5, checkbox6, checkbox8, checkbox9;
+
+const btnHecho = document.getElementById("btn");
 
 window.setup = function setup() {
 
@@ -87,7 +91,8 @@ window.setup = function setup() {
   zffToggle = false;
   zncToggle = false;
   znfToggle = false;
-
+  
+  product = "";
 
   //lateral menu
   menu = loadImage("../img/menu.png");
@@ -427,6 +432,9 @@ function chocolateCake() {
     cToggle = true;
     checkbox2.checked(false);
     checkbox3.checked(false);
+
+    product = "chocolate";
+
   } else {
     cToggle = false;
   }
@@ -552,6 +560,7 @@ function vanillaCake() {
 
   if (checkbox2.checked()) {
     vToggle = true;
+    product = "vanilla";
   } else {
     vToggle = false;
   }
@@ -676,6 +685,7 @@ function carrotCake() {
 
   if (checkbox3.checked()) {
     zToggle = true;
+    product = "carrot";
   } else {
     zToggle = false;
   }
@@ -794,3 +804,22 @@ function carrotCake() {
     zffToggle = false;
   }
 }
+
+
+//btn hecho
+btnHecho.addEventListener("click", (e) => {
+
+    //window.localStorage.setItem("category",product);
+
+    if(product === "chocolate") {
+      window.location.href= "https://linaperalta.github.io/pascake/dist/product.html?id=X8Ng0q0xzpVvQtRhGb5E";
+    }
+    if(product === "vanilla") {
+    window.location.href= "https://linaperalta.github.io/pascake/dist/product.html?id=G4hiKILkVgwxD6Qr1JhM";
+    }
+
+    if(product === "carrot") {
+    window.location.href= "https://linaperalta.github.io/pascake/dist/product.html?id=oq9TwjCNaHYUMXK7x3qF";
+    }
+
+});
